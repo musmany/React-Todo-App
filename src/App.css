@@ -13,7 +13,7 @@ body {
 /* App Container */
 .app {
   width: 90%;
-  min-width: 900px;
+/*   min-width: 900px; */
   background: #ffffff;
   border-radius: 16px;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
