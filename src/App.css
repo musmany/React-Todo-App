@@ -1,0 +1,164 @@
+/* General layout */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* App Container */
+.app {
+  width: 90%;
+  min-width: 900px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Heading */
+.heading {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #2c3e50;
+  font-size: 1.8rem;
+}
+
+/* Input area */
+.todo-input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 160px;
+  font-size: 1rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 16px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.btn:hover {
+  background: #43a047;
+  transform: scale(1.05);
+}
+
+/* Todos list */
+.todos-list {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafafa;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #e0e0e0;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.todo-item span {
+  flex: 1;
+  font-size: 1rem;
+  color: #333;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Empty state */
+.empty {
+  color: #888;
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Responsive Breakpoints */
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+  .app {
+    max-width: 95%;
+    padding: 16px;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+  .btn {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+}
+
+/* 📲 Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .app {
+    max-width: 750px;
+    padding: 24px;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .input {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+}
+
+/* 💻 Laptop/Desktop */
+@media (min-width: 1025px) {
+  .app {
+    max-width: 1000px;
+    padding: 32px;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+  .input {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+  .btn {
+    font-size: 1.1rem;
+    padding: 12px 18px;
+  }
+}
